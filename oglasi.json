@@ -46,5 +46,29 @@
     "lokacija": "Novalja",
     "cijena": "145.000 EUR",
     "izvor": "Realitica"
+  },
+  {
+    "naslov": "Kuća na Krku, 120m2 s okućnicom",
+    "url": "https://crozilla-nekretnine.com/kuca-krk",
+    "zupanija": "Primorsko-goranska",
+    "lokacija": "Krk",
+    "cijena": "315.000 EUR",
+    "izvor": "Crozilla"
+  },
+  {
+    "naslov": "Stan u Zadru, novi, 65m2",
+    "url": "https://index.hr/stan-zadar",
+    "zupanija": "Zadarska",
+    "lokacija": "Zadar",
+    "cijena": "190.000 EUR",
+    "izvor": "Index Oglasi"
+  },
+  {
+    "naslov": "Apartman Makarska, 40m2, blizu plaže",
+    "url": "https://realitica.com/apartman-makarska",
+    "zupanija": "Splitsko-dalmatinska",
+    "lokacija": "Makarska",
+    "cijena": "175.000 EUR",
+    "izvor": "Realitica"
   }
 ]
