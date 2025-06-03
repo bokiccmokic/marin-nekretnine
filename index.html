@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Marin Nekretnine</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 2em; }
+        h1 { color: #333; }
+        .oglas { background: white; padding: 1em; margin-bottom: 1em; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+        .oglas h3 { margin: 0; font-size: 1.2em; color: #007bff; }
+        .oglas small { color: #555; }
+        .source { font-size: 0.9em; color: gray; }
+        select, button { padding: 0.5em; font-size: 1em; margin-bottom: 1em; }
+    </style>
+</head>
+<body>
+    <h1>🏠 Marin Nekretnine – Najnoviji oglasi</h1>
+
+    <form method="get">
+        <label for="zupanija">Odaberi županiju:</label>
+        <select id="zupanija" name="zupanija">
+            <option value="">Sve županije</option>
+            {% for z in zupanije %}
+                <option value="{{ z }}" {% if z == odabrana %}selected{% endif %}>{{ z }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Prikaži</button>
+    </form>
+
+    {% for oglas in oglasi %}
+        <div class="oglas">
+            <h3><a href="{{ oglas.url }}" target="_blank">{{ oglas.naslov }}</a></h3>
+            <small>{{ oglas.zupanija }}{% if oglas.lokacija %}, {{ oglas.lokacija }}{% endif %}</small><br>
+            {% if oglas.cijena %}<strong>{{ oglas.cijena }}</strong><br>{% endif %}
+            <span class="source">Izvor: {{ oglas.izvor }}</span>
+        </div>
+    {% endfor %}
+</body>
+</html>
