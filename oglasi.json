@@ -22,5 +22,29 @@
     "lokacija": "Šibenik",
     "cijena": "330.000 EUR",
     "izvor": "Realitica"
+  },
+  {
+    "naslov": "Zemljište na Murteru od 600m2",
+    "url": "https://crozilla-nekretnine.com/zemlja-murter",
+    "zupanija": "Šibensko-kninska",
+    "lokacija": "Murter",
+    "cijena": "99.000 EUR",
+    "izvor": "Crozilla"
+  },
+  {
+    "naslov": "Stan u Dubrovniku, privatna osoba",
+    "url": "https://index.hr/dubrovnik-stan",
+    "zupanija": "Dubrovačko-neretvanska",
+    "lokacija": "Dubrovnik",
+    "cijena": "250.000 EUR",
+    "izvor": "Index Oglasi"
+  },
+  {
+    "naslov": "Apartman u Novalji, 45m2",
+    "url": "https://realitica.com/novalja-apartman",
+    "zupanija": "Ličko-senjska",
+    "lokacija": "Novalja",
+    "cijena": "145.000 EUR",
+    "izvor": "Realitica"
   }
 ]
