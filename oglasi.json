@@ -1,18 +1,26 @@
 [
   {
-    "naslov": "Stan u Splitu, 70m2",
-    "url": "https://realitica.com/stannnnnn",
-    "zupanija": "Splitsko-dalmatinska",
-    "lokacija": "Split",
-    "cijena": "200.000 EUR",
+    "naslov": "Stan u Rijeci 82m2 s pogledom na more",
+    "url": "https://realitica.com/stan-rijeka",
+    "zupanija": "Primorsko-goranska",
+    "lokacija": "Rijeka",
+    "cijena": "210.000 EUR",
     "izvor": "Realitica"
   },
   {
-    "naslov": "Kuća u Zadru s pogledom na more",
-    "url": "https://index.hr/kucaaaaa",
-    "zupanija": "Zadarska",
-    "lokacija": "Zadar",
-    "cijena": "350.000 EUR",
+    "naslov": "Apartman u Puli 50m2, blizu plaže",
+    "url": "https://index.hr/apartman-pula",
+    "zupanija": "Istarska",
+    "lokacija": "Pula",
+    "cijena": "180.000 EUR",
     "izvor": "Index Oglasi"
+  },
+  {
+    "naslov": "Kuća u Šibeniku s okućnicom",
+    "url": "https://realitica.com/kuca-sibenik",
+    "zupanija": "Šibensko-kninska",
+    "lokacija": "Šibenik",
+    "cijena": "330.000 EUR",
+    "izvor": "Realitica"
   }
 ]
