@@ -1,16 +1,31 @@
 from flask import Flask, render_template_string, request
 import feedparser
+import html
 
 app = Flask(__name__)
 
-# Gradovi i njihovi RSS feedovi s Realitice (primjeri)
+# Sve županije u Hrvatskoj i odgovarajući RSS linkovi s Realitice
 rss_izvori = {
-    "Split": "https://www.realitica.com/rss/?t=nekretnine_spl_hr",
-    "Zadar": "https://www.realitica.com/rss/?t=nekretnine_zd_hr",
-    "Rijeka": "https://www.realitica.com/rss/?t=nekretnine_ri_hr",
-    "Pula": "https://www.realitica.com/rss/?t=nekretnine_pu_hr",
-    "Šibenik": "https://www.realitica.com/rss/?t=nekretnine_si_hr",
-    "Makarska": "https://www.realitica.com/rss/?t=nekretnine_mk_hr"
+    "Zagrebačka": "https://www.realitica.com/rss/?cat=realestate&region=Zagrebačka&lang=hr",
+    "Krapinsko-zagorska": "https://www.realitica.com/rss/?cat=realestate&region=Krapinsko-zagorska&lang=hr",
+    "Sisačko-moslavačka": "https://www.realitica.com/rss/?cat=realestate&region=Sisačko-moslavačka&lang=hr",
+    "Karlovačka": "https://www.realitica.com/rss/?cat=realestate&region=Karlovačka&lang=hr",
+    "Varaždinska": "https://www.realitica.com/rss/?cat=realestate&region=Varaždinska&lang=hr",
+    "Koprivničko-križevačka": "https://www.realitica.com/rss/?cat=realestate&region=Koprivničko-križevačka&lang=hr",
+    "Bjelovarsko-bilogorska": "https://www.realitica.com/rss/?cat=realestate&region=Bjelovarsko-bilogorska&lang=hr",
+    "Primorsko-goranska": "https://www.realitica.com/rss/?cat=realestate&region=Primorsko-goranska&lang=hr",
+    "Ličko-senjska": "https://www.realitica.com/rss/?cat=realestate&region=Ličko-senjska&lang=hr",
+    "Virovitičko-podravska": "https://www.realitica.com/rss/?cat=realestate&region=Virovitičko-podravska&lang=hr",
+    "Požeško-slavonska": "https://www.realitica.com/rss/?cat=realestate&region=Požeško-slavonska&lang=hr",
+    "Brodsko-posavska": "https://www.realitica.com/rss/?cat=realestate&region=Brodsko-posavska&lang=hr",
+    "Zadarska": "https://www.realitica.com/rss/?cat=realestate&region=Zadarska&lang=hr",
+    "Osječko-baranjska": "https://www.realitica.com/rss/?cat=realestate&region=Osječko-baranjska&lang=hr",
+    "Šibensko-kninska": "https://www.realitica.com/rss/?cat=realestate&region=Šibensko-kninska&lang=hr",
+    "Vukovarsko-srijemska": "https://www.realitica.com/rss/?cat=realestate&region=Vukovarsko-srijemska&lang=hr",
+    "Splitsko-dalmatinska": "https://www.realitica.com/rss/?cat=realestate&region=Splitsko-dalmatinska&lang=hr",
+    "Istarska": "https://www.realitica.com/rss/?cat=realestate&region=Istarska&lang=hr",
+    "Dubrovačko-neretvanska": "https://www.realitica.com/rss/?cat=realestate&region=Dubrovačko-neretvanska&lang=hr",
+    "Međimurska": "https://www.realitica.com/rss/?cat=realestate&region=Međimurska&lang=hr"
 }
 
 html_template = """
@@ -29,25 +44,26 @@ html_template = """
   <body>
     <h1>🏡 Marin Nekretnine</h1>
     <form method="get">
-      <label for="grad">Odaberi grad:</label>
-      <select name="grad" id="grad">
-        {% for grad in rss_izvori %}
-          <option value="{{ grad }}" {% if grad == odabrani_grad %}selected{% endif %}>{{ grad }}</option>
+      <label for="zupanija">Odaberi županiju:</label>
+      <select name="zupanija" id="zupanija">
+        {% for zupanija in rss_izvori %}
+          <option value="{{ zupanija }}" {% if zupanija == odabrana_zupanija %}selected{% endif %}>{{ zupanija }}</option>
         {% endfor %}
       </select>
       <button type="submit">Prikaži</button>
     </form>
 
     {% if oglasi %}
-      <h2>Oglasi za {{ odabrani_grad }}</h2>
+      <h2>Oglasi za {{ odabrana_zupanija }} županiju</h2>
       {% for oglas in oglasi %}
         <div class="oglas">
           <a href="{{ oglas.link }}" target="_blank">{{ oglas.title }}</a><br>
-          <small>{{ oglas.published }}</small>
+          <small>{{ oglas.published }}</small><br>
+          {% if oglas.get("summary") %}<em>{{ oglas.summary|safe }}</em>{% endif %}
         </div>
       {% endfor %}
     {% else %}
-      <p>Nema oglasa za odabrani grad.</p>
+      <p>Nema dostupnih oglasa za odabranu županiju.</p>
     {% endif %}
   </body>
 </html>
@@ -55,13 +71,13 @@ html_template = """
 
 @app.route("/", methods=["GET"])
 def prikaz_oglasa():
-    odabrani_grad = request.args.get("grad", "Split")
-    feed_url = rss_izvori.get(odabrani_grad)
+    odabrana_zupanija = request.args.get("zupanija", "Splitsko-dalmatinska")
+    feed_url = rss_izvori.get(odabrana_zupanija)
     oglasi = []
     if feed_url:
         feed = feedparser.parse(feed_url)
         oglasi = feed.entries[:20]
-    return render_template_string(html_template, oglasi=oglasi, rss_izvori=rss_izvori, odabrani_grad=odabrani_grad)
+    return render_template_string(html_template, oglasi=oglasi, rss_izvori=rss_izvori, odabrana_zupanija=odabrana_zupanija)
 
 if __name__ == "__main__":
     app.run()
