@@ -1,10 +1,8 @@
 from flask import Flask, render_template_string, request
 import feedparser
-import html
 
 app = Flask(__name__)
 
-# Sve županije u Hrvatskoj i odgovarajući RSS linkovi s Realitice
 rss_izvori = {
     "Zagrebačka": "https://www.realitica.com/rss/?cat=realestate&region=Zagrebačka&lang=hr",
     "Krapinsko-zagorska": "https://www.realitica.com/rss/?cat=realestate&region=Krapinsko-zagorska&lang=hr",
@@ -39,6 +37,7 @@ html_template = """
       select, button { padding: 0.5em; font-size: 1em; margin-bottom: 1em; }
       .oglas { background: white; padding: 1em; margin-bottom: 1em; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
       a { text-decoration: none; color: #007bff; font-weight: bold; }
+      .error { color: red; margin-top: 1em; }
     </style>
   </head>
   <body>
@@ -53,7 +52,9 @@ html_template = """
       <button type="submit">Prikaži</button>
     </form>
 
-    {% if oglasi %}
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% elif oglasi %}
       <h2>Oglasi za {{ odabrana_zupanija }} županiju</h2>
       {% for oglas in oglasi %}
         <div class="oglas">
@@ -74,10 +75,17 @@ def prikaz_oglasa():
     odabrana_zupanija = request.args.get("zupanija", "Splitsko-dalmatinska")
     feed_url = rss_izvori.get(odabrana_zupanija)
     oglasi = []
-    if feed_url:
-        feed = feedparser.parse(feed_url)
-        oglasi = feed.entries[:20]
-    return render_template_string(html_template, oglasi=oglasi, rss_izvori=rss_izvori, odabrana_zupanija=odabrana_zupanija)
+    error = ""
+    try:
+        if feed_url:
+            feed = feedparser.parse(feed_url)
+            if feed.bozo:
+                error = "Greška pri učitavanju oglasa. Pokušajte kasnije."
+            else:
+                oglasi = feed.entries[:20]
+    except Exception as e:
+        error = f"Došlo je do pogreške: {str(e)}"
+    return render_template_string(html_template, oglasi=oglasi, rss_izvori=rss_izvori, odabrana_zupanija=odabrana_zupanija, error=error)
 
 if __name__ == "__main__":
     app.run()
