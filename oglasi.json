@@ -1,7 +1,7 @@
 [
   {
     "naslov": "Stan u Rijeci 82m2 s pogledom na more",
-    "url": "https://realitica.com/stan-rijeka",
+    "url": "https://www.google.com/search?q=Stan%20u%20Rijeci%2082m2%20s%20pogledom%20na%20more%20site%3Arealitica.com",
     "zupanija": "Primorsko-goranska",
     "lokacija": "Rijeka",
     "cijena": "210.000 EUR",
@@ -17,7 +17,7 @@
   },
   {
     "naslov": "Kuća u Šibeniku s okućnicom",
-    "url": "https://realitica.com/kuca-sibenik",
+    "url": "https://www.google.com/search?q=Ku%C4%87a%20u%20%C5%A0ibeniku%20s%20oku%C4%87nicom%20site%3Arealitica.com",
     "zupanija": "Šibensko-kninska",
     "lokacija": "Šibenik",
     "cijena": "330.000 EUR",
@@ -41,7 +41,7 @@
   },
   {
     "naslov": "Apartman u Novalji, 45m2",
-    "url": "https://realitica.com/novalja-apartman",
+    "url": "https://www.google.com/search?q=Apartman%20u%20Novalji%2C%2045m2%20site%3Arealitica.com",
     "zupanija": "Ličko-senjska",
     "lokacija": "Novalja",
     "cijena": "145.000 EUR",
@@ -65,10 +65,34 @@
   },
   {
     "naslov": "Apartman Makarska, 40m2, blizu plaže",
-    "url": "https://realitica.com/apartman-makarska",
+    "url": "https://www.google.com/search?q=Apartman%20Makarska%2C%2040m2%2C%20blizu%20pla%C5%BEe%20site%3Arealitica.com",
     "zupanija": "Splitsko-dalmatinska",
     "lokacija": "Makarska",
     "cijena": "175.000 EUR",
     "izvor": "Realitica"
+  },
+  {
+    "naslov": "Stan Zagreb 2 sobe Trešnjevka",
+    "url": "https://www.google.com/search?q=Stan%20Zagreb%202%20sobe%20Tre%C5%A1njevka%20site%3Anjuskalo.hr",
+    "zupanija": "Grad Zagreb",
+    "lokacija": "Zagreb",
+    "cijena": "135.000 EUR",
+    "izvor": "Njuškalo"
+  },
+  {
+    "naslov": "Kuća Rovinj s pogledom na more",
+    "url": "https://www.google.com/search?q=Ku%C4%87a%20Rovinj%20s%20pogledom%20na%20more%20site%3Agohome.hr",
+    "zupanija": "Istarska",
+    "lokacija": "Rovinj",
+    "cijena": "420.000 EUR",
+    "izvor": "GoHome"
+  },
+  {
+    "naslov": "Stan Split 60m2 novogradnja",
+    "url": "https://www.google.com/search?q=Stan%20Split%2060m2%20novogradnja%20site%3Aindomio.hr",
+    "zupanija": "Splitsko-dalmatinska",
+    "lokacija": "Split",
+    "cijena": "200.000 EUR",
+    "izvor": "Indomio"
   }
 ]
