@@ -1,98 +1,82 @@
 [
   {
-    "naslov": "Stan u Rijeci 82m2 s pogledom na more",
-    "url": "https://www.google.com/search?q=Stan%20u%20Rijeci%2082m2%20s%20pogledom%20na%20more%20site%3Arealitica.com",
-    "zupanija": "Primorsko-goranska",
-    "lokacija": "Rijeka",
-    "cijena": "210.000 EUR",
-    "izvor": "Realitica"
-  },
-  {
-    "naslov": "Apartman u Puli 50m2, blizu plaže",
-    "url": "https://www.google.com/search?q=Apartman%20u%20Puli%2050m2%2C%20blizu%20pla%C5%BEe%20site%3Aindex.hr",
-    "zupanija": "Istarska",
-    "lokacija": "Pula",
-    "cijena": "180.000 EUR",
-    "izvor": "Index Oglasi"
-  },
-  {
-    "naslov": "Kuća u Šibeniku s okućnicom",
-    "url": "https://www.google.com/search?q=Ku%C4%87a%20u%20%C5%A0ibeniku%20s%20oku%C4%87nicom%20site%3Arealitica.com",
-    "zupanija": "Šibensko-kninska",
-    "lokacija": "Šibenik",
-    "cijena": "330.000 EUR",
-    "izvor": "Realitica"
-  },
-  {
-    "naslov": "Zemljište na Murteru od 600m2",
-    "url": "https://www.google.com/search?q=Zemlji%C5%A1te%20na%20Murteru%20od%20600m2%20site%3Acrozilla-nekretnine.com",
-    "zupanija": "Šibensko-kninska",
-    "lokacija": "Murter",
-    "cijena": "99.000 EUR",
-    "izvor": "Crozilla"
-  },
-  {
-    "naslov": "Stan u Dubrovniku, privatna osoba",
-    "url": "https://www.google.com/search?q=Stan%20u%20Dubrovniku%2C%20privatna%20osoba%20site%3Aindex.hr",
-    "zupanija": "Dubrovačko-neretvanska",
-    "lokacija": "Dubrovnik",
-    "cijena": "250.000 EUR",
-    "izvor": "Index Oglasi"
-  },
-  {
-    "naslov": "Apartman u Novalji, 45m2",
-    "url": "https://www.google.com/search?q=Apartman%20u%20Novalji%2C%2045m2%20site%3Arealitica.com",
-    "zupanija": "Ličko-senjska",
-    "lokacija": "Novalja",
-    "cijena": "145.000 EUR",
-    "izvor": "Realitica"
-  },
-  {
-    "naslov": "Kuća na Krku, 120m2 s okućnicom",
-    "url": "https://www.google.com/search?q=Ku%C4%87a%20na%20Krku%2C%20120m2%20s%20oku%C4%87nicom%20site%3Acrozilla-nekretnine.com",
-    "zupanija": "Primorsko-goranska",
-    "lokacija": "Krk",
-    "cijena": "315.000 EUR",
-    "izvor": "Crozilla"
-  },
-  {
-    "naslov": "Stan u Zadru, novi, 65m2",
-    "url": "https://www.google.com/search?q=Stan%20u%20Zadru%2C%20novi%2C%2065m2%20site%3Aindex.hr",
-    "zupanija": "Zadarska",
-    "lokacija": "Zadar",
-    "cijena": "190.000 EUR",
-    "izvor": "Index Oglasi"
-  },
-  {
-    "naslov": "Apartman Makarska, 40m2, blizu plaže",
-    "url": "https://www.google.com/search?q=Apartman%20Makarska%2C%2040m2%2C%20blizu%20pla%C5%BEe%20site%3Arealitica.com",
-    "zupanija": "Splitsko-dalmatinska",
-    "lokacija": "Makarska",
-    "cijena": "175.000 EUR",
-    "izvor": "Realitica"
-  },
-  {
-    "naslov": "Stan Zagreb 2 sobe Trešnjevka",
-    "url": "https://www.google.com/search?q=Stan%20Zagreb%202%20sobe%20Tre%C5%A1njevka%20site%3Anjuskalo.hr",
+    "naslov": "Stan u Zagrebu, 65m2, Trešnjevka",
     "zupanija": "Grad Zagreb",
     "lokacija": "Zagreb",
-    "cijena": "135.000 EUR",
-    "izvor": "Njuškalo"
+    "cijena": "145.000 EUR",
+    "izvor": "Njuškalo",
+    "url": "https://www.google.com/search?q=Stan%20u%20Zagrebu%2C%2065m2%2C%20Tre%C5%A1njevka%20site%3Anjuskalo.hr"
   },
   {
-    "naslov": "Kuća Rovinj s pogledom na more",
-    "url": "https://www.google.com/search?q=Ku%C4%87a%20Rovinj%20s%20pogledom%20na%20more%20site%3Agohome.hr",
+    "naslov": "Kuća u Samoboru s okućnicom",
+    "zupanija": "Zagrebačka",
+    "lokacija": "Samobor",
+    "cijena": "230.000 EUR",
+    "izvor": "Crozilla",
+    "url": "https://www.google.com/search?q=Ku%C4%87a%20u%20Samoboru%20s%20oku%C4%87nicom%20site%3Acrozilla-nekretnine.com"
+  },
+  {
+    "naslov": "Apartman u Puli 50m2",
     "zupanija": "Istarska",
-    "lokacija": "Rovinj",
-    "cijena": "420.000 EUR",
-    "izvor": "GoHome"
+    "lokacija": "Pula",
+    "cijena": "185.000 EUR",
+    "izvor": "Index Oglasi",
+    "url": "https://www.google.com/search?q=Apartman%20u%20Puli%2050m2%20site%3Aindex.hr"
   },
   {
-    "naslov": "Stan Split 60m2 novogradnja",
-    "url": "https://www.google.com/search?q=Stan%20Split%2060m2%20novogradnja%20site%3Aindomio.hr",
+    "naslov": "Stan Split centar 60m2",
     "zupanija": "Splitsko-dalmatinska",
     "lokacija": "Split",
     "cijena": "200.000 EUR",
-    "izvor": "Indomio"
+    "izvor": "Indomio",
+    "url": "https://www.google.com/search?q=Stan%20Split%20centar%2060m2%20site%3Aindomio.hr"
+  },
+  {
+    "naslov": "Kuća u Zadru, 120m2, privatno",
+    "zupanija": "Zadarska",
+    "lokacija": "Zadar",
+    "cijena": "295.000 EUR",
+    "izvor": "GoHome",
+    "url": "https://www.google.com/search?q=Ku%C4%87a%20u%20Zadru%2C%20120m2%2C%20privatno%20site%3Agohome.hr"
+  },
+  {
+    "naslov": "Zemljište na Murteru 600m2",
+    "zupanija": "Šibensko-kninska",
+    "lokacija": "Murter",
+    "cijena": "98.000 EUR",
+    "izvor": "Realitica",
+    "url": "https://www.google.com/search?q=Zemlji%C5%A1te%20na%20Murteru%20600m2%20site%3Arealitica.com"
+  },
+  {
+    "naslov": "Stan Rovinj blizu mora",
+    "zupanija": "Istarska",
+    "lokacija": "Rovinj",
+    "cijena": "275.000 EUR",
+    "izvor": "Njuškalo",
+    "url": "https://www.google.com/search?q=Stan%20Rovinj%20blizu%20mora%20site%3Anjuskalo.hr"
+  },
+  {
+    "naslov": "Kuća s dvorištem, Knin",
+    "zupanija": "Šibensko-kninska",
+    "lokacija": "Knin",
+    "cijena": "123.000 EUR",
+    "izvor": "Index Oglasi",
+    "url": "https://www.google.com/search?q=Ku%C4%87a%20s%20dvori%C5%A1tem%2C%20Knin%20site%3Aindex.hr"
+  },
+  {
+    "naslov": "Apartman u Rijeci 45m2",
+    "zupanija": "Primorsko-goranska",
+    "lokacija": "Rijeka",
+    "cijena": "150.000 EUR",
+    "izvor": "Crozilla",
+    "url": "https://www.google.com/search?q=Apartman%20u%20Rijeci%2045m2%20site%3Acrozilla-nekretnine.com"
+  },
+  {
+    "naslov": "Stan u Osijeku 55m2",
+    "zupanija": "Osječko-baranjska",
+    "lokacija": "Osijek",
+    "cijena": "105.000 EUR",
+    "izvor": "GoHome",
+    "url": "https://www.google.com/search?q=Stan%20u%20Osijeku%2055m2%20site%3Agohome.hr"
   }
 ]
